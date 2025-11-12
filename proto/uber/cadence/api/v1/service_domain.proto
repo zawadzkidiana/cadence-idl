@@ -120,6 +120,7 @@ message FailoverDomainRequest {
   // only applicable for active-active use-cases where the failover is occurring
   // at the cluster-attribute level only
   ActiveClusters active_clusters = 30;
+  string reason = 40;
 }
 
 message FailoverDomainResponse {
